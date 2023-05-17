@@ -1,0 +1,3 @@
+/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles/r3kemu.dir
+/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles/edit_cache.dir
+/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles/rebuild_cache.dir
