@@ -26,16 +26,15 @@ int main(){
     fclose(file);
     
     // エミュレータを初期化する
-    R3K r3k;
+    R3K r3k = R3K();
     r3k.loadProgram(buffer, length);
 
     // エミュレータを実行する
-    while (r3k.step()) {
-        // 何もしない
-    }
-    
+    r3k.run();
+    //r3k.step();
+
     // メモリを解放する
-    delete[] buffer;
+    //delete[] buffer;
 
     return 0;
 }

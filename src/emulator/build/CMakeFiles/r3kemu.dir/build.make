@@ -108,6 +108,7 @@ r3kemu_EXTERNAL_OBJECTS =
 bin/r3kemu: CMakeFiles/r3kemu.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/top.cpp.o
 bin/r3kemu: CMakeFiles/r3kemu.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/r3k.cpp.o
 bin/r3kemu: CMakeFiles/r3kemu.dir/build.make
+bin/r3kemu: libmylib.a
 bin/r3kemu: CMakeFiles/r3kemu.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/r3kemu"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/r3kemu.dir/link.txt --verbose=$(VERBOSE)

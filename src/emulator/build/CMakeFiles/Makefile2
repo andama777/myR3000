@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/b
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/mylib.dir/all
 all: CMakeFiles/r3kemu.dir/all
 .PHONY : all
 
@@ -71,22 +72,49 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/mylib.dir/clean
 clean: CMakeFiles/r3kemu.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mylib.dir
+
+# All Build rule for target.
+CMakeFiles/mylib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles --progress-num=1,2,3 "Built target mylib"
+.PHONY : CMakeFiles/mylib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mylib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mylib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles 0
+.PHONY : CMakeFiles/mylib.dir/rule
+
+# Convenience name for target.
+mylib: CMakeFiles/mylib.dir/rule
+.PHONY : mylib
+
+# clean rule for target.
+CMakeFiles/mylib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/clean
+.PHONY : CMakeFiles/mylib.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/r3kemu.dir
 
 # All Build rule for target.
-CMakeFiles/r3kemu.dir/all:
+CMakeFiles/r3kemu.dir/all: CMakeFiles/mylib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/r3kemu.dir/build.make CMakeFiles/r3kemu.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/r3kemu.dir/build.make CMakeFiles/r3kemu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles --progress-num=1,2,3 "Built target r3kemu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles --progress-num=4,5,6 "Built target r3kemu"
 .PHONY : CMakeFiles/r3kemu.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/r3kemu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/r3kemu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/build/CMakeFiles 0
 .PHONY : CMakeFiles/r3kemu.dir/rule

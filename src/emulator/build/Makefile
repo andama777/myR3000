@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mylib
+
+# Build rule for target.
+mylib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mylib
+.PHONY : mylib
+
+# fast build rule for target.
+mylib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/build
+.PHONY : mylib/fast
+
+#=============================================================================
 # Target rules for targets named r3kemu
 
 # Build rule for target.
@@ -128,6 +141,54 @@ r3kemu: cmake_check_build_system
 r3kemu/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/r3kemu.dir/build.make CMakeFiles/r3kemu.dir/build
 .PHONY : r3kemu/fast
+
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.o: mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.o
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.o
+
+# target to build an object file
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.o
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.o
+
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.i: mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.i
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.i
+
+# target to preprocess a source file
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.i
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.i
+
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.s: mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.s
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.s
+
+# target to generate assembly for a file
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.s
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.cpp.s
+
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.o: mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.o
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.o
+
+# target to build an object file
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.o
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.o
+
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.i: mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.i
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.i
+
+# target to preprocess a source file
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.i
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.i
+
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.s: mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.s
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.s
+
+# target to generate assembly for a file
+mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.s
+.PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.cpp.s
 
 mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/r3k.o: mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/r3k.cpp.o
 .PHONY : mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/r3k.o
@@ -185,7 +246,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... mylib"
 	@echo "... r3kemu"
+	@echo "... mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.o"
+	@echo "... mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.i"
+	@echo "... mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/instruction.s"
+	@echo "... mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.o"
+	@echo "... mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.i"
+	@echo "... mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/lib/register.s"
 	@echo "... mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/r3k.o"
 	@echo "... mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/r3k.i"
 	@echo "... mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/r3k.s"

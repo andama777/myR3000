@@ -1,1 +1,1 @@
-/usr/bin/c++ -O3 -DNDEBUG -rdynamic CMakeFiles/r3kemu.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/top.cpp.o CMakeFiles/r3kemu.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/r3k.cpp.o -o bin/r3kemu 
+/usr/bin/c++ -g -Wall -O0 -DDEBUG -rdynamic CMakeFiles/r3kemu.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/top.cpp.o CMakeFiles/r3kemu.dir/mnt/c/intelFPGA_lite/22.1std/projects/myR3000/src/emulator/r3k.cpp.o -o bin/r3kemu  libmylib.a 

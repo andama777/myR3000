@@ -36,5 +36,3 @@ mips-linux-gnu-as -mips32 rom.s -o rom.o
 mips-linux-gnu-ld rom.o -o rom.bin
 ```
 でできた warning出るけど
-
-

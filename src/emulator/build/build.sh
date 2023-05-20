@@ -1,3 +1,5 @@
+# rm -rf ./CMakeFiles
+# rm CMakeCache.txt
 cmake .
 make
-bin/r3kemu
+./bin/r3kemu
