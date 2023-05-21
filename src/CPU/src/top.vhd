@@ -1,7 +1,12 @@
 -- mips32 r3000 top.vhd
-
 library ieee;
 use ieee.std_logic_1164.all;
+
+-- ISR
+-- Decoder
+-- Controller
+-- ALU
+
 
 entity top is
     port (
@@ -35,27 +40,29 @@ architecture rtl of top is
     signal oDecoder : std_logic_vector(31 downto 0);
 
     begin
-    decoder : entity work.decoder port map (
-        iCLK => CLK50,
-        iRST_N => RST_N,
-        iInst => Inst
-        oDecoder => Decoder
-    );
+    -- decoder : entity work.decoder port map (
+    --     iCLK => CLK50,
+    --     iRST_N => RST_N,
+    --     iInst => Inst
+    --     oDecoder => Decoder
+    -- );
 
-    regs : entity work.registers port map(
-        CLK => CLK50,
-        RST_N => RST_N,
-        oReg0 => Reg0, oReg1 => Reg1, oReg2 => Reg2, oReg3 => Reg3, oReg4 => Reg4, oReg5 => Reg5, oReg6 => Reg6, oReg7 => Reg7, oReg8 => Reg8, oReg9 => Reg9,
-        oReg10 => Reg10, oReg11 => Reg11, oReg12 => Reg12, oReg13 => Reg13, oReg14 => Reg14, oReg15 => Reg15, oReg16 => Reg16, oReg17 => Reg17, oReg18 => Reg18, oReg19 => Reg19,
-        oReg20 => Reg20, oReg21 => Reg21, oReg22 => Reg22, oReg23 => Reg23, oReg24 => Reg24, oReg25 => Reg25, oReg26 => Reg26, oReg27 => Reg27, oReg28 => Reg28, oReg29 => Reg29, oReg30 => Reg30, oReg31 => Reg31
-    );
+    -- regs : entity work.registers port map(
+    --     CLK => CLK50,
+    --     RST_N => RST_N,
+    --     oReg0 => Reg0, oReg1 => Reg1, oReg2 => Reg2, oReg3 => Reg3, oReg4 => Reg4, oReg5 => Reg5, oReg6 => Reg6, oReg7 => Reg7, oReg8 => Reg8, oReg9 => Reg9,
+    --     oReg10 => Reg10, oReg11 => Reg11, oReg12 => Reg12, oReg13 => Reg13, oReg14 => Reg14, oReg15 => Reg15, oReg16 => Reg16, oReg17 => Reg17, oReg18 => Reg18, oReg19 => Reg19,
+    --     oReg20 => Reg20, oReg21 => Reg21, oReg22 => Reg22, oReg23 => Reg23, oReg24 => Reg24, oReg25 => Reg25, oReg26 => Reg26, oReg27 => Reg27, oReg28 => Reg28, oReg29 => Reg29, oReg30 => Reg30, oReg31 => Reg31
+    -- );
 
-    alu : entity work.alu port map(
-        iCtr => oDecoder,
-        iAbus => Abus,
-        iBbus => Bbus,
-        oSbus => Sbus
-    );
+    -- alu : entity work.alu port map(
+    --     iCtr => oDecoder,
+    --     iAbus => Abus,
+    --     iBbus => Bbus,
+    --     oSbus => Sbus
+    -- );
+
+    
 
 
 

@@ -36,3 +36,10 @@ mips-linux-gnu-as -mips32 rom.s -o rom.o
 mips-linux-gnu-ld rom.o -o rom.bin
 ```
 でできた warning出るけど
+
+### .elf -> .hexをやる
+```
+mips-linux-gnu-gcc -O0 -mips32 main.c -o rom.elf
+mips-linux-gnu-objcopy -O ihex rom.elf rom.hex
+```
+```
